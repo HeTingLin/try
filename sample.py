@@ -37,7 +37,7 @@ def callback():
     return 'OK'
 
 
-@handler.add(MessageEvent, message=StickerSendMessage)
+@handler.add(MessageEvent)
 def handle_message(event):
     msg = event.message.text
     if "貼圖" in msg or "sticker" in msg:
