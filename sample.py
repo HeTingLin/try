@@ -42,7 +42,7 @@ def handle_message(event):
     msg = event.message.text
     if "貼圖" in msg or "sticker" in msg:
         message=StickerSendMessage(
-            package_id=random.randint(1, 5),
+            package_id='1',
             sticker_id=random.randint(1, 10))
         line_bot_api.reply_message(event.reply_token,message)
     if "圖片" in msg or "picture" in msg:
