@@ -1,5 +1,6 @@
 from flask import Flask, request, abort
 import os
+import random
 
 from linebot import (
     LineBotApi, WebhookHandler
