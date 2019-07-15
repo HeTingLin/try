@@ -47,8 +47,8 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token,message)
     if "圖片" in msg or "picture" in msg:
         message=ImageSendMessage(
-           original_content_url='https://www.google.com/search?biw=1280&bih=529&tbm=isch&sa=1&ei=tfQrXZKbEpuGoATh7LbACg&q=%E5%A4%AA%E9%99%BD&oq=%E5%A4%AA&gs_l=img.1.0.0l10.8164.12558..14308...0.0..1.906.1170.4j6-1......0....1..gws-wiz-img.....0.r3S2wCE8cAY#imgrc=Vj-PdRiIWZyZXM:',
-           preview_image_url='https://www.google.com/search?biw=1280&bih=529&tbm=isch&sa=1&ei=tfQrXZKbEpuGoATh7LbACg&q=%E5%A4%AA%E9%99%BD&oq=%E5%A4%AA&gs_l=img.1.0.0l10.8164.12558..14308...0.0..1.906.1170.4j6-1......0....1..gws-wiz-img.....0.r3S2wCE8cAY#imgrc=Vj-PdRiIWZyZXM:')
+           original_content_url='https://s.yimg.com/zp/images/1B21BBF8B58B5D112CCC5436536C639033B48C5A',
+           preview_image_url='https://s.yimg.com/zp/images/1B21BBF8B58B5D112CCC5436536C639033B48C5A')
         line_bot_api.reply_message(event.reply_token,message)
     # 回應使用者輸入的話
     #line_bot_api.reply_message(
